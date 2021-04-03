@@ -253,7 +253,7 @@ function get20s(arr){
     splitArr.forEach(elem => Number(elem));
     // console.log(splitArr);
     
-    if (splitArr[0] >= 1900 && splitArr[1] < 1999) {
+    if (splitArr[0] >= 1900 && splitArr[1] < 2000) {
       cent20th.push(arr[i].name)
     }
 
@@ -274,8 +274,9 @@ function get20s(arr){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+ function removeArtist(arr, IndexNum){
+  arr.splice(IndexNum,1);
+  return arr.length;
 }
    
 
@@ -295,8 +296,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr){
+    let newObj = {
+      id: 20,
+      name: "Kyle Cardwell", 
+      years: "1988 - ",
+      genre: "Web Design", 
+      nationality: "American",
+      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, expedita quasi, sint pariatur quo cum optio repudiandae recusandae odio voluptas quis dolores eum praesentium minus ut, id dolorum. Quia."
+    }
+    arr.push(newObj);
+    return arr;
   }
 
   
@@ -308,8 +318,19 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(arr){
+
+  const over100 = [];
+
+ for (let elem = 0; elem < arr.length; elem++) {
+
+    if (arr[elem].paintings > 100) {
+      over100.push(arr[elem].name);
+    }
+  }
+
+  return over100;
+
 }
 
 
