@@ -98,6 +98,7 @@ nav span{
     align-items: center;
     height:60vh;
     margin:5% 0;
+    font-weight: bold;
 }	
 .title-container div:hover {	
     opacity: 80%;	
@@ -146,6 +147,10 @@ button:hover{
         width: 100%;
     }
 
+    .title-container hr{
+        width:100%;
+    }
+
     /*Artists Section Styles */
     .artists-container{
         flex-direction: column;
@@ -155,6 +160,10 @@ button:hover{
     .artist{
         width:80%;
         margin-bottom: 50px;
+    }
+
+    .artist img {
+        max-height: 250px;
     }
 }
     
