@@ -39,7 +39,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 4. What is the purpose of using functions in code?
 
-    using functions allows you to repeat specific actions within your code or repeat the same action on different data repeatably
+    using functions allows you to repeat specific actions within your code or repeat the same action on different data repeatably 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
