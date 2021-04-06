@@ -209,7 +209,7 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-console.log(artists[0]);
+console.log(artists[0].name);
 //(2) Bio of the third artist (2nd index) in the array 
 
 console.log(artists[2].bio);
@@ -368,7 +368,7 @@ function getHTML(/* Code here */){
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(arr){
 
     /* Code here */
 
